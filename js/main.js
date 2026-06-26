@@ -54,9 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mouseenter', () => cursor.classList.remove('hidden'));
   }
 
-  // ====== DOCK & MOBILE ACTIVE STATE ======
+  // ====== MOBILE MENU ACTIVE STATE ======
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.dock-link, .mobile-link').forEach(link => {
+  document.querySelectorAll('.mobile-link').forEach(link => {
     const href = link.getAttribute('href');
     if (href === currentPath) {
       link.classList.add('active');

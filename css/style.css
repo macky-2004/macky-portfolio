@@ -271,77 +271,10 @@ h4 {
   transform: scale(0.95);
 }
 
-/* ====== DOCK NAVIGATION ====== */
-
-.dock {
-  position: fixed;
-  bottom: 28px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  padding: 12px 20px;
-  background: rgba(224, 229, 236, 0.75);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 60px;
-  box-shadow: var(--shadow-pop-sm);
-  z-index: 1000;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  transition: background-color 0.4s ease, box-shadow 0.4s ease;
-}
-
-body.dark-mode .dock {
-  background: rgba(26, 26, 26, 0.75);
-  border-color: rgba(255, 255, 255, 0.06);
-}
-
-.dock-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 12px;
-  border-radius: 40px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  transition: all var(--transition);
-  white-space: nowrap;
-  min-height: 40px;
-}
-
-.dock-link svg {
-  width: 18px;
-  height: 18px;
-}
-
-.dock-link:hover {
-  color: var(--accent);
-  box-shadow: inset 4px 4px 8px var(--clay-dark), inset -4px -4px 8px var(--clay-light);
-  background: var(--clay-card);
-}
-
-.dock-link.active {
-  color: var(--accent);
-  box-shadow: inset 4px 4px 8px var(--clay-dark), inset -4px -4px 8px var(--clay-light);
-  background: var(--clay-card);
-  font-weight: 600;
-}
-
-.dock-divider {
-  width: 1px;
-  height: 24px;
-  background: var(--clay-dark);
-  opacity: 0.4;
-  margin: 0;
-}
-
-/* ====== HAMBURGER MENU (mobile) ====== */
+/* ====== HAMBURGER MENU ====== */
 
 .hamburger {
-  display: none;
+  display: flex;
   position: fixed;
   top: 24px;
   right: 80px;
@@ -1644,7 +1577,6 @@ body.dark-mode .orb-logo img {
 @media (max-width: 768px) {
   /* — Hamburger Menu — */
   .hamburger {
-    display: flex;
     top: 16px;
     right: 68px;
     width: 40px;
@@ -1655,10 +1587,6 @@ body.dark-mode .orb-logo img {
   .hamburger span {
     width: 20px;
     height: 2px;
-  }
-
-  .dock {
-    display: none;
   }
 
   /* — Layout Reflow — */
@@ -1766,33 +1694,6 @@ body.dark-mode .orb-logo img {
     padding: 28px 20px;
   }
 
-  /* — Dock — */
-  .dock {
-    width: 90%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    transform: none;
-    padding: 8px 12px;
-    gap: 10px;
-    bottom: 16px;
-  }
-
-  .dock-link {
-    padding: 6px 10px;
-    font-size: 0.7rem;
-    min-height: 40px;
-  }
-
-  .dock-link svg {
-    width: 16px;
-    height: 16px;
-  }
-
-  .dock-divider {
-    margin: 0;
-  }
-
   /* — Misc — */
   #clay-cursor {
     display: none;
@@ -1859,27 +1760,6 @@ body.dark-mode .orb-logo img {
 
   .orb-level {
     font-size: 0.75rem;
-  }
-
-  /* — Compact dock — */
-  .dock {
-    padding: 6px 8px;
-    gap: 6px;
-  }
-
-  .dock-link {
-    padding: 4px 6px;
-    font-size: 0.6rem;
-    min-height: 40px;
-  }
-
-  .dock-link svg {
-    width: 14px;
-    height: 14px;
-  }
-
-  .dock-divider {
-    margin: 0;
   }
 
   /* — Full-width buttons — */
