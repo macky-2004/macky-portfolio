@@ -54,14 +54,47 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mouseenter', () => cursor.classList.remove('hidden'));
   }
 
-  // ====== DOCK ACTIVE STATE ======
+  // ====== DOCK & MOBILE ACTIVE STATE ======
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.dock-link').forEach(link => {
+  document.querySelectorAll('.dock-link, .mobile-link').forEach(link => {
     const href = link.getAttribute('href');
     if (href === currentPath) {
       link.classList.add('active');
     }
   });
+
+  // ====== HAMBURGER MENU TOGGLE ======
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeBtn = document.querySelector('.mobile-menu-close');
+
+  function openMenu() {
+    mobileMenu.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', openMenu);
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closeMenu);
+    }
+
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu) {
+        closeMenu();
+      }
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+  }
 
   // ====== FADE-UP ANIMATIONS ======
   const fadeEls = document.querySelectorAll('.fade-up');
