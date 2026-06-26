@@ -525,20 +525,6 @@ body.dark-mode .mobile-social a {
   margin: 0 auto;
 }
 
-.hero-text .tagline {
-  display: inline-block;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  padding: 8px 18px;
-  border-radius: 40px;
-  background: var(--clay-card);
-  box-shadow: var(--shadow-push-sm);
-}
-
 .hero-text h1 {
   font-size: 3.2rem;
   color: var(--text-primary);
