@@ -1461,16 +1461,19 @@ body.dark-mode .orb-logo img {
 }
 
 @media (max-width: 768px) {
-  .page-header h1 {
-    font-size: 2rem;
+  /* — Layout Reflow — */
+  .container {
+    padding: 0 15px;
   }
 
-  .hero-text h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero-text h2 {
-    font-size: 1.2rem;
+  .hero-content,
+  .about-grid,
+  .contact-grid,
+  .projects-grid,
+  .featured-grid,
+  .achievements-grid,
+  .about-content .strength-list {
+    grid-template-columns: 1fr;
   }
 
   .hero-portrait .portrait-frame {
@@ -1478,14 +1481,92 @@ body.dark-mode .orb-logo img {
     height: 240px;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
+  /* — Claymorphism Adaptation — */
+  .clay-card,
+  .project-card,
+  .resume-card,
+  .contact-info-card,
+  .featured-card {
+    box-shadow: 12px 12px 28px var(--clay-dark), -8px -8px 20px var(--clay-light);
   }
 
-  .achievements-grid {
-    grid-template-columns: 1fr;
+  .orb {
+    box-shadow: inset 8px 8px 14px var(--clay-dark), inset -5px -5px 10px var(--clay-light);
+    width: 110px;
+    height: 110px;
   }
 
+  .orb-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .orb-logo img,
+  .orb-logo svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .orb-level {
+    font-size: 0.8rem;
+  }
+
+  .orb-grid {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 32px 24px;
+  }
+
+  .orb::after {
+    font-size: 0.7rem;
+    bottom: -22px;
+  }
+
+  .project-card .project-img {
+    height: 160px;
+  }
+
+  /* — Text Scaling — */
+  .page-header h1 {
+    font-size: 1.65rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1rem;
+  }
+
+  .featured-section h2 {
+    font-size: 1.65rem;
+    margin-bottom: 36px;
+  }
+
+  .resume-card h2 {
+    font-size: 1.2rem;
+  }
+
+  /* — Touch Optimization — */
+  .project-card .project-overlay .clay-btn {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 12px 18px;
+    font-size: 0.85rem;
+  }
+
+  .resume-card .clay-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 16px 32px;
+    font-size: 1rem;
+  }
+
+  .resume-card {
+    padding: 28px 20px;
+  }
+
+  /* — Dock — */
   .dock {
     padding: 8px 12px;
     gap: 2px;
@@ -1506,69 +1587,7 @@ body.dark-mode .orb-logo img {
     height: 16px;
   }
 
-  .featured-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-content .strength-list {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .container {
-    padding: 0 16px;
-  }
-
-  .orb {
-    width: 110px;
-    height: 110px;
-  }
-
-  .orb::after {
-    font-size: 0.7rem;
-    bottom: -22px;
-  }
-
-  .orb-logo {
-    width: 38px;
-    height: 38px;
-  }
-
-  .orb-logo img {
-    width: 32px;
-    height: 32px;
-  }
-
-  .orb-logo svg {
-    width: 32px;
-    height: 32px;
-  }
-
-  .orb-level {
-    font-size: 0.8rem;
-  }
-
-  .orb-grid {
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-    gap: 32px 24px;
-  }
-
-  .project-card .project-img {
-    height: 160px;
-  }
-
-  .resume-card {
-    padding: 28px 20px;
-  }
-
-  .resume-card h2 {
-    font-size: 1.4rem;
-  }
-
-  .resume-card .clay-btn {
-    font-size: 0.95rem;
-    padding: 14px 32px;
-  }
-
+  /* — Misc — */
   #clay-cursor {
     display: none;
   }
@@ -1583,27 +1602,31 @@ body.dark-mode .orb-logo img {
 }
 
 @media (max-width: 480px) {
-  .dock-link {
-    padding: 4px 8px;
-    font-size: 0.7rem;
+  /* — Further text scaling — */
+  .page-header h1 {
+    font-size: 1.4rem;
   }
 
-  .dock-divider {
-    margin: 0 4px;
+  .hero-text h1 {
+    font-size: 1.5rem;
   }
 
-  .dock-social-link {
-    padding: 4px;
+  .hero-text h2 {
+    font-size: 0.9rem;
   }
 
-  .dock-social-link svg {
-    width: 14px;
-    height: 14px;
+  .featured-section h2 {
+    font-size: 1.4rem;
   }
 
+  .resume-card h2 {
+    font-size: 1.1rem;
+  }
+
+  /* — Single column all grids — */
   .orb-grid {
-    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-    gap: 28px 16px;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 12px;
   }
 
   .orb {
@@ -1622,6 +1645,7 @@ body.dark-mode .orb-logo img {
     height: 30px;
   }
 
+  .orb-logo img,
   .orb-logo svg {
     width: 28px;
     height: 28px;
@@ -1629,5 +1653,30 @@ body.dark-mode .orb-logo img {
 
   .orb-level {
     font-size: 0.75rem;
+  }
+
+  /* — Compact dock — */
+  .dock-link {
+    padding: 4px 8px;
+    font-size: 0.7rem;
+  }
+
+  .dock-divider {
+    margin: 0 4px;
+  }
+
+  .dock-social-link {
+    padding: 4px;
+  }
+
+  .dock-social-link svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* — Full-width buttons — */
+  .hero-cta .clay-btn {
+    width: 100%;
+    justify-content: center;
   }
 }
