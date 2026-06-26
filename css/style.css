@@ -1568,18 +1568,30 @@ body.dark-mode .orb-logo img {
 
   /* — Dock — */
   .dock {
-    padding: 8px 12px;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: none;
+    padding: 8px 10px;
     gap: 2px;
     bottom: 16px;
   }
 
   .dock-link {
-    padding: 6px 10px;
-    font-size: 0.75rem;
+    padding: 6px 8px;
+    font-size: 0.7rem;
+    min-height: 40px;
+  }
+
+  .dock-divider {
+    margin: 0 6px;
   }
 
   .dock-social-link {
     padding: 6px;
+    min-width: 40px;
+    min-height: 40px;
   }
 
   .dock-social-link svg {
@@ -1656,17 +1668,25 @@ body.dark-mode .orb-logo img {
   }
 
   /* — Compact dock — */
+  .dock {
+    padding: 6px 6px;
+    gap: 1px;
+  }
+
   .dock-link {
-    padding: 4px 8px;
-    font-size: 0.7rem;
+    padding: 4px 4px;
+    font-size: 0.6rem;
+    min-height: 40px;
   }
 
   .dock-divider {
-    margin: 0 4px;
+    margin: 0 3px;
   }
 
   .dock-social-link {
     padding: 4px;
+    min-width: 40px;
+    min-height: 40px;
   }
 
   .dock-social-link svg {
