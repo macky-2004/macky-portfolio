@@ -3,7 +3,7 @@
 :root {
   /* — Deep Ocean Theme (Dark Only) — */
   --bg-color: #0A2540;
-  --text-color: #E2E8F0;
+  --text-color: #FFFFFF;
 
   /* — Clay System — */
   --clay-bg: var(--bg-color);
@@ -59,17 +59,11 @@
   --cursor-glow: rgba(0, 212, 178, 0.1);
   --btn-glow: rgba(0, 212, 178, 0.25);
   --gradient-btn: linear-gradient(135deg, #00D4B2, #70FFD0);
-  --gradient-text: linear-gradient(135deg, #00D4B2, #70FFD0, #E2E8F0);
+  --gradient-text: linear-gradient(135deg, #00D4B2, #70FFD0, #FFFFFF);
   --card-border-glow: linear-gradient(135deg, #00D4B2, #70FFD0);
 
-  /* — Mesh Background (Deep Ocean) — */
-  --mesh-bg:
-    radial-gradient(ellipse at 15% 10%, rgba(0, 212, 178, 0.10) 0%, transparent 55%),
-    radial-gradient(ellipse at 85% 20%, rgba(112, 255, 208, 0.05) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 80%, rgba(0, 212, 178, 0.08) 0%, transparent 50%),
-    radial-gradient(ellipse at 20% 75%, rgba(112, 255, 208, 0.03) 0%, transparent 40%),
-    radial-gradient(ellipse at 80% 70%, rgba(0, 212, 178, 0.04) 0%, transparent 45%),
-    radial-gradient(ellipse at 50% 50%, rgba(10, 37, 64, 0.5) 0%, transparent 70%);
+  /* — Background Glow — */
+  --bg-glow: radial-gradient(circle at 70% 30%, #00D4B2 0%, #0A2540 70%);
 }
 
 * {
@@ -85,7 +79,7 @@ html {
 body {
   font-family: var(--font);
   background-color: var(--bg-color);
-  background-image: var(--mesh-bg);
+  background-image: var(--bg-glow);
   color: var(--text-primary);
   min-height: 100vh;
   line-height: 1.7;
@@ -93,11 +87,6 @@ body {
   padding-bottom: 100px;
   background-attachment: fixed;
   background-size: cover;
-}
-
-@keyframes ambientShift {
-  0% { background-position: 0% 0%; }
-  100% { background-position: 100% 100%; }
 }
 
 a {
