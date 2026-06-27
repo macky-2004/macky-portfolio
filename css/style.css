@@ -520,7 +520,8 @@ p {
 }
 
 .hero-text h1 {
-  font-size: 3.2rem;
+  font-size: 3.5rem;
+  font-weight: 800;
   color: var(--text-primary);
   letter-spacing: -1px;
   margin-bottom: 16px;
@@ -528,7 +529,7 @@ p {
 
 .hero-text h2 {
   font-size: 1.6rem;
-  color: var(--text-secondary);
+  color: #A0A0A0;
   margin-bottom: 32px;
 }
 
@@ -555,10 +556,8 @@ p {
 .hero-portrait .portrait-frame {
   width: 380px;
   height: 380px;
-  border-radius: 50%;
+  border-radius: 20px;
   overflow: hidden;
-  background: var(--clay-card);
-  padding: 8px;
 }
 
 .hero-portrait .portrait-frame img,
@@ -566,16 +565,12 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 20px;
 }
 
 .portrait-frame-clay {
   position: relative;
   overflow: hidden;
-}
-
-.hero-portrait .portrait-frame-clay {
-  box-shadow: var(--shadow-pop-lg), inset 8px 8px 18px var(--inset-dark), inset -6px -6px 14px var(--inset-light);
 }
 
 .about-sidebar .portrait-frame-clay {
@@ -1633,7 +1628,7 @@ p {
   }
 
   .hero-text h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .hero-text h2 {
