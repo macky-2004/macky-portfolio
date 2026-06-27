@@ -1437,8 +1437,10 @@ p {
   gap: 8px;
   padding: 12px 22px;
   border-radius: var(--radius-sm);
-  background: var(--clay-card);
-  box-shadow: var(--shadow-pop-sm);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-secondary);
@@ -1446,7 +1448,7 @@ p {
 }
 
 .contact-social a:hover {
-  box-shadow: var(--shadow-push-sm);
+  background: rgba(255, 255, 255, 0.08);
   color: var(--accent);
 }
 
