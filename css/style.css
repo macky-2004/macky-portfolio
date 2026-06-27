@@ -6,7 +6,7 @@
   --text-color: #F0F0F0;
 
   /* — Glass System — */
-  --glass-bg: rgba(0, 0, 0, 0.6);
+  --glass-bg: #121212;
   --clay-card: var(--glass-bg);
   --glass-border: 1px solid rgba(255, 255, 255, 0.05);
   --glass-blur: 0px;
@@ -182,8 +182,8 @@ p {
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
   border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 30px;
+  border: 1px solid #222;
+  padding: 40px;
   transition: transform 0.3s ease;
 }
 
@@ -197,8 +197,8 @@ p {
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
   border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 30px;
+  border: 1px solid #222;
+  padding: 40px;
 }
 
 /* — Text visibility shield inside glass cards — */
@@ -612,8 +612,8 @@ p {
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
   border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 30px;
+  border: 1px solid #222;
+  padding: 40px;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -765,12 +765,12 @@ p {
 
 .strength-item {
   text-align: center;
-  padding: 30px 20px;
+  padding: 40px;
   border-radius: var(--radius-sm);
   background: var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #222;
   transition: transform 0.3s ease;
 }
 
@@ -1034,7 +1034,7 @@ p {
   background: var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #222;
   overflow: hidden;
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -1064,7 +1064,7 @@ p {
 }
 
 .project-card .project-body {
-  padding: 24px 28px 28px;
+  padding: 40px;
   position: relative;
   z-index: 1;
   flex: 1;
@@ -1320,12 +1320,12 @@ p {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 22px;
+  padding: 40px;
   border-radius: var(--radius-sm);
   background: var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #222;
   transition: transform 0.3s ease;
 }
 
@@ -1358,12 +1358,12 @@ p {
 }
 
 .contact-form {
-  padding: 30px;
+  padding: 40px;
   border-radius: var(--radius);
   background: var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #222;
 }
 
 .contact-form h3 {
@@ -1471,8 +1471,8 @@ p {
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
   border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 48px 56px;
+  border: 1px solid #222;
+  padding: 40px;
   text-align: center;
   transition: transform 0.3s ease;
 }
