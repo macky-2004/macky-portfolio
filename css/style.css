@@ -2,8 +2,8 @@
 
 :root {
   /* — Deep Ocean Theme (Dark Only) — */
-  --bg-color: #0A2540;
-  --text-color: #FFFFFF;
+  --bg-color: #0A0A0A;
+  --text-color: #F0F0F0;
 
   /* — Glass System — */
   --glass-bg: rgba(0, 0, 0, 0.6);
@@ -21,25 +21,24 @@
   /* — Accent (Turquoise / Mint) — */
   --accent-primary: #00D4B2;
   --accent-secondary: #70FFD0;
-  --accent-tertiary: #0A2540;
+  --accent-tertiary: #0A0A0A;
   --accent: #00D4B2;
   --accent-hover: #70FFD0;
   --accent-soft: rgba(0, 212, 178, 0.12);
-  --accent-gradient: linear-gradient(135deg, rgba(0, 212, 178, 0.88), rgba(112, 255, 208, 0.3));
 
   /* — Text — */
-  --text-primary: #F8FAFC;
-  --text-secondary: #CBD5E1;
-  --text-muted: #718096;
+  --text-primary: #F0F0F0;
+  --text-secondary: #F0F0F0;
+  --text-muted: #F0F0F0;
 
   /* — Glass (translucent bg overlays) — */
-  --bg-glass-50: rgba(10, 37, 64, 0.5);
-  --bg-glass-60: rgba(10, 37, 64, 0.6);
-  --bg-glass-75: rgba(10, 37, 64, 0.75);
-  --bg-glass-80: rgba(10, 37, 64, 0.8);
-  --bg-glass-90: rgba(10, 37, 64, 0.9);
-  --bg-glass-92: rgba(10, 37, 64, 0.92);
-  --bg-glass-95: rgba(10, 37, 64, 0.95);
+  --bg-glass-50: rgba(10, 10, 10, 0.5);
+  --bg-glass-60: rgba(10, 10, 10, 0.6);
+  --bg-glass-75: rgba(10, 10, 10, 0.75);
+  --bg-glass-80: rgba(10, 10, 10, 0.8);
+  --bg-glass-90: rgba(10, 10, 10, 0.9);
+  --bg-glass-92: rgba(10, 10, 10, 0.92);
+  --bg-glass-95: rgba(10, 10, 10, 0.95);
 
   /* — Font — */
   --font: 'Inter', 'Segoe UI', sans-serif;
@@ -61,12 +60,6 @@
   --cursor-border: rgba(0, 212, 178, 0.3);
   --cursor-glow: rgba(0, 212, 178, 0.1);
   --btn-glow: rgba(0, 212, 178, 0.25);
-  --gradient-btn: linear-gradient(135deg, #00D4B2, #70FFD0);
-  --gradient-text: linear-gradient(135deg, #00D4B2, #70FFD0, #FFFFFF);
-  --card-border-glow: linear-gradient(135deg, #00D4B2, #70FFD0);
-
-  /* — Background Glow — */
-  --bg-glow: radial-gradient(circle at 70% 30%, #00D4B2 0%, #0A2540 70%);
 }
 
 * {
@@ -82,7 +75,6 @@ html {
 body {
   font-family: var(--font);
   background-color: var(--bg-color);
-  background-image: var(--bg-glow);
   color: var(--text-primary);
   min-height: 100vh;
   line-height: 1.7;
@@ -111,24 +103,19 @@ h1 {
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.01em;
-  color: #F8FAFC;
+  color: #F0F0F0;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .gradient-text {
-  background: var(--gradient-text);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: var(--accent);
 }
 
 h2 {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  color: #F8FAFC;
+  color: #F0F0F0;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -136,7 +123,7 @@ h3 {
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: 0.01em;
-  color: #F8FAFC;
+  color: #F0F0F0;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -144,12 +131,12 @@ h4 {
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: 0.01em;
-  color: #F8FAFC;
+  color: #F0F0F0;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 p {
-  color: #CBD5E1;
+  color: #F0F0F0;
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.7;
@@ -222,7 +209,7 @@ p {
 
 :is(.glass-card, .clay-card, .clay-card-push, .featured-card, .project-card,
     .strength-item, .contact-info-card, .contact-form, .resume-card) p {
-  color: #FFFFFF !important;
+  color: #F0F0F0 !important;
   font-weight: 500;
   letter-spacing: 0.015em;
 }
@@ -257,8 +244,8 @@ p {
 }
 
 .clay-btn-primary {
-  background: var(--gradient-btn);
-  color: var(--text-color);
+  background: var(--accent);
+  color: #FFFFFF;
   box-shadow: var(--shadow-pop-sm);
   transition: all var(--transition);
 }
@@ -281,7 +268,7 @@ p {
   justify-content: center;
   gap: 32px;
   padding: 16px 24px;
-  background: rgba(10, 37, 64, 0.7);
+  background: rgba(10, 10, 10, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 1000;
@@ -290,7 +277,7 @@ p {
 .nav-link {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #F0F0F0;
   text-decoration: none;
   transition: opacity 0.2s ease;
   letter-spacing: 0.02em;
@@ -1146,7 +1133,7 @@ p {
   transition: opacity 0.3s ease, transform 0.3s ease;
   pointer-events: none;
   z-index: 2;
-  background: linear-gradient(transparent, rgba(10, 37, 64, 0.9) 40%);
+  background: linear-gradient(transparent, rgba(10, 10, 10, 0.9) 40%);
 }
 
 .project-card:hover .project-overlay {
