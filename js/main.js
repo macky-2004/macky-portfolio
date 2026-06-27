@@ -45,34 +45,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ====== HAMBURGER MENU TOGGLE ======
   const hamburger = document.querySelector('.hamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const closeBtn = document.querySelector('.mobile-menu-close');
+  const nav = document.querySelector('.nav');
 
-  function openMenu() {
-    mobileMenu.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeMenu() {
-    mobileMenu.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-
-  if (hamburger && mobileMenu) {
-    hamburger.addEventListener('click', openMenu);
-
-    if (closeBtn) {
-      closeBtn.addEventListener('click', closeMenu);
-    }
-
-    mobileMenu.addEventListener('click', (e) => {
-      if (e.target === mobileMenu) {
-        closeMenu();
-      }
+  if (hamburger && nav) {
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('nav-active');
     });
 
-    document.querySelectorAll('.mobile-link').forEach(link => {
-      link.addEventListener('click', closeMenu);
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('nav-active');
+      });
     });
   }
 
