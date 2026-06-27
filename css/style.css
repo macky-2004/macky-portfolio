@@ -1056,7 +1056,7 @@ p {
 
 .project-card .project-img {
   width: 100%;
-  height: 220px;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -1557,7 +1557,7 @@ p {
   }
 
   .project-card .project-img {
-    height: 180px;
+    height: 160px;
   }
 
   .project-card .project-body {
@@ -1662,10 +1662,9 @@ p {
   }
 
   .project-card .project-img {
-    height: 160px;
+    height: 140px;
   }
 
-  /* — Text Scaling — */
   .page-header h1 {
     font-size: 1.65rem;
   }
