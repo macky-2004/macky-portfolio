@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ====== NAVIGATION ACTIVE STATE ======
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.dock-link, .mobile-link').forEach(link => {
+  document.querySelectorAll('.nav-link, .mobile-link').forEach(link => {
     const href = link.getAttribute('href');
     if (href === currentPath) {
       link.classList.add('active');
