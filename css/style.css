@@ -1030,19 +1030,21 @@ p {
 
 .project-card {
   position: relative;
-  border-radius: var(--radius);
+  border-radius: 12px;
   background: var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
   border: 1px solid #222;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   display: flex;
   flex-direction: column;
 }
 
 .project-card:hover {
+  background: #1A1A1A;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
   transform: translateY(-4px);
 }
 
