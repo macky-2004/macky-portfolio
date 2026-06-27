@@ -9,7 +9,7 @@
   --glass-bg: #121212;
   --clay-card: var(--glass-bg);
   --glass-border: 1px solid rgba(255, 255, 255, 0.05);
-  --glass-blur: 0px;
+  --glass-blur: 15px;
   --clay-bg: var(--bg-color);
   --clay-dark: rgba(0, 0, 0, 0.25);
   --clay-dark-deep: rgba(0, 0, 0, 0.35);
@@ -187,8 +187,8 @@ p {
 .glass-card,
 .clay-card {
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
   border-radius: var(--radius);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 40px;
@@ -202,8 +202,8 @@ p {
 
 .clay-card-push {
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
   border-radius: var(--radius);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 40px;
@@ -277,8 +277,8 @@ p {
   gap: 32px;
   padding: 16px 24px;
   background: rgba(10, 10, 10, 0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
   z-index: 1000;
 }
 
@@ -315,8 +315,8 @@ p {
   border: none;
   border-radius: 12px;
   background: var(--bg-glass-80);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
   box-shadow: 5px 5px 10px var(--clay-dark), -5px -5px 10px var(--clay-light);
   cursor: pointer;
   flex-direction: column;
@@ -397,8 +397,8 @@ p {
   border: none;
   border-radius: 12px;
   background: var(--bg-glass-80);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
   box-shadow: 5px 5px 10px var(--clay-dark), -5px -5px 10px var(--clay-light);
   cursor: pointer;
   display: flex;
@@ -484,15 +484,15 @@ p {
 
 #clay-cursor {
   position: fixed;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
   background: var(--cursor-core);
   border: 2px solid var(--cursor-border);
   box-shadow: 0 0 12px var(--cursor-glow);
-  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, opacity 0.3s ease;
+  transition: transform 0.1s ease, background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, opacity 0.3s ease;
   transform: translate(-50%, -50%);
   backdrop-filter: blur(2px);
 }
@@ -531,7 +531,7 @@ p {
 .hero-text h1 {
   font-size: 3.5rem;
   font-weight: 800;
-  color: var(--text-primary);
+  color: #FFB800;
   letter-spacing: -1px;
   margin-bottom: 16px;
 }
@@ -567,6 +567,7 @@ p {
   height: 380px;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 184, 0, 0.3);
 }
 
 .hero-portrait .portrait-frame img,
@@ -611,8 +612,8 @@ p {
 
 .featured-card {
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
   border-radius: var(--radius);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 40px;
@@ -770,8 +771,8 @@ p {
 .strength-item {
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
   padding: 40px;
   border-radius: var(--radius-sm);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1037,8 +1038,8 @@ p {
 .project-card {
   position: relative;
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
@@ -1046,6 +1047,7 @@ p {
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  aspect-ratio: 3 / 2;
 }
 
 .project-card:hover {
@@ -1329,8 +1331,8 @@ p {
   align-items: center;
   gap: 16px;
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
   padding: 40px;
   border-radius: var(--radius-sm);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1367,8 +1369,8 @@ p {
 
 .contact-form {
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
   padding: 40px;
   border-radius: var(--radius);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1476,8 +1478,8 @@ p {
 
 .resume-card {
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
   border-radius: var(--radius);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 40px;
