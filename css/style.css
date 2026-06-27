@@ -6,7 +6,7 @@
   --text-color: #FFFFFF;
 
   /* — Glass System — */
-  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-bg: rgba(255, 255, 255, 0.08);
   --clay-card: var(--glass-bg);
   --glass-border: 1px solid rgba(255, 255, 255, 0.05);
   --glass-blur: 8px;
@@ -28,8 +28,8 @@
   --accent-gradient: linear-gradient(135deg, rgba(0, 212, 178, 0.88), rgba(112, 255, 208, 0.3));
 
   /* — Text — */
-  --text-primary: var(--text-color);
-  --text-secondary: #A0AEC0;
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
   --text-muted: #718096;
 
   /* — Glass (translucent bg overlays) — */
@@ -110,9 +110,9 @@ img {
 h1 {
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.02em;
-  color: #FFFFFF;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
+  color: #F8FAFC;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .gradient-text {
@@ -127,32 +127,33 @@ h1 {
 h2 {
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -0.02em;
-  color: #FFFFFF;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
+  color: #F8FAFC;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 h3 {
   font-weight: 600;
   line-height: 1.3;
-  letter-spacing: -0.02em;
-  color: #FFFFFF;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
+  color: #F8FAFC;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 h4 {
   font-weight: 600;
   line-height: 1.4;
-  letter-spacing: -0.02em;
-  color: #FFFFFF;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
+  color: #F8FAFC;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 p {
-  color: #A0AEC0;
+  color: #CBD5E1;
   font-weight: 400;
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
 }
 
 .container {
