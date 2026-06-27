@@ -100,6 +100,7 @@ img {
 }
 
 h1 {
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.01em;
@@ -112,6 +113,7 @@ h1 {
 }
 
 h2 {
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.01em;
@@ -139,7 +141,7 @@ p {
   color: #F0F0F0;
   font-weight: 400;
   font-size: 1.1rem;
-  line-height: 1.7;
+  line-height: 1.6;
   letter-spacing: 0.01em;
 }
 
@@ -507,11 +509,7 @@ p {
   align-items: center;
   justify-content: center;
   padding: 4rem 24px;
-  position: relative;
-  background-image:
-    radial-gradient(ellipse at 25% 15%, rgba(79, 70, 229, 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 75% 85%, rgba(168, 85, 247, 0.04) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 50%, rgba(56, 189, 248, 0.03) 0%, transparent 50%);
+  margin-bottom: 60px;
 }
 
 .hero-content {
@@ -590,6 +588,7 @@ p {
 
 .featured-section {
   padding: 4rem 24px;
+  margin-bottom: 60px;
 }
 
 .featured-section h2 {
@@ -674,6 +673,7 @@ p {
 .resume-section {
   text-align: center;
   padding: 4rem 24px;
+  margin-bottom: 60px;
 }
 
 .resume-section h2 {
@@ -693,7 +693,7 @@ p {
   grid-template-columns: 300px 1fr;
   gap: 40px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 60px;
   padding: 4rem 24px;
 }
 
@@ -870,7 +870,7 @@ p {
 
 .skills-grid {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 60px;
   padding: 4rem 24px;
 }
 
@@ -1023,7 +1023,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 36px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 60px;
   padding: 0 24px 4rem;
   align-items: stretch;
 }
@@ -1151,7 +1151,7 @@ p {
 
 .achievements-wrapper {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 60px;
   padding: 4rem 24px;
 }
 
@@ -1306,7 +1306,7 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 60px;
   padding: 4rem 24px;
 }
 
