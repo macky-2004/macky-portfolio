@@ -1026,9 +1026,9 @@ p {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  width: 90%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto 60px;
   padding: 0 24px 4rem;
@@ -1047,7 +1047,7 @@ p {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  aspect-ratio: 3 / 2;
+  min-height: 400px;
 }
 
 .project-card:hover {
